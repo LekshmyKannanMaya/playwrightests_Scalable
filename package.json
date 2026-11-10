@@ -1,15 +1,26 @@
 {
   "name": "e2e-automation-scalable",
   "version": "1.0.0",
-  "description": "",
+  "description": "End-to-end automation built with Playwright + TypeScript",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test:debug": "playwright test --debug",
+    "report": "playwright show-report",
+    "test": "npx playwright test"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
     "@playwright/test": "^1.65.0",
-    "@types/node": "^26.6.6"
+    "@types/node": "^26.6.6",
+    "dotenv": "^16.3.1",
+    "mailslurp-client": "^17.6.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^7.0.2"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^10.6.0"
   }
 }
